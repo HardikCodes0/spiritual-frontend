@@ -2,15 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-* {
+body, input, button, textarea, select {
   font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure all text uses Poppins */
+* {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 body {
   background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 50%, #f59e0b 100%);
   min-height: 100vh;
+}
+
+/* Input field styling */
+input::placeholder {
+  color: #9ca3af !important;
+  font-weight: 400;
+}
+
+input:focus::placeholder {
+  color: #d1d5db !important;
 }
 
 /* Custom scrollbar */

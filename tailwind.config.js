@@ -7,7 +7,8 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          'poppins': ['Poppins', 'sans-serif'],
+          'poppins': ['Poppins', 'system-ui', 'sans-serif'],
+          'sans': ['Poppins', 'system-ui', 'sans-serif'],
         },
         backgroundImage: {
           'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

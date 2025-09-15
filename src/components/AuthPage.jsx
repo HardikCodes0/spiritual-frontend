@@ -8,7 +8,7 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen relative flex items-center justify-center p-4 font-['Poppins',sans-serif]">
+    <div className="min-h-screen relative flex items-center justify-center p-4 font-poppins">
       <CherryBlossomBg />
       
       <motion.div
@@ -105,7 +105,7 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
               placeholder="Username"
               value={authData.username}
               onChange={(e) => setAuthData({...authData, username: e.target.value})}
-              className="w-full pl-12 pr-4 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium"
+              className="w-full pl-12 pr-4 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium placeholder-gray-500"
               style={{
                 boxShadow: '0 2px 10px rgba(251, 191, 36, 0.1)'
               }}
@@ -128,7 +128,7 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
                 placeholder="Email"
                 value={authData.email}
                 onChange={(e) => setAuthData({...authData, email: e.target.value})}
-                className="w-full pl-12 pr-4 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium"
+                className="w-full pl-12 pr-4 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium placeholder-gray-500"
                 style={{
                   boxShadow: '0 2px 10px rgba(251, 191, 36, 0.1)'
                 }}
@@ -151,7 +151,7 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
               placeholder="Password"
               value={authData.password}
               onChange={(e) => setAuthData({...authData, password: e.target.value})}
-              className="w-full pl-12 pr-12 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium"
+              className="w-full pl-12 pr-12 py-4 bg-yellow-50/50 border-2 border-yellow-200/50 rounded-2xl focus:outline-none focus:border-yellow-400 focus:bg-white/90 transition-all duration-300 hover:bg-white/70 text-gray-700 font-medium placeholder-gray-500"
               style={{
                 boxShadow: '0 2px 10px rgba(251, 191, 36, 0.1)'
               }}
