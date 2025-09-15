@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.6",
     "axios": "^1.11.0",
     "email-validator": "^2.0.4",
     "framer-motion": "^12.23.12",
