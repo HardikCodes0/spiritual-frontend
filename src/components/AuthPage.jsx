@@ -65,11 +65,11 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
             onClick={() => setAuthMode("login")}
             className={`flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-300 ${
               authMode === "login"
-                ? "bg-gradient-to-r from-yellow-400 to-yellow-500 text-white shadow-lg transform scale-[1.02]"
+                ? "bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-lg transform scale-[1.02] font-bold"
                 : "text-yellow-700 hover:text-yellow-800 hover:bg-yellow-100/50"
             }`}
             style={{
-              boxShadow: authMode === "login" ? '0 4px 15px rgba(251, 191, 36, 0.3)' : 'none'
+              boxShadow: authMode === "login" ? '0 6px 20px rgba(251, 191, 36, 0.4), 0 0 15px rgba(251, 191, 36, 0.2)' : 'none'
             }}
           >
             Login
@@ -78,11 +78,11 @@ const AuthPage = ({ authMode, setAuthMode, authData, setAuthData, handleAuth, lo
             onClick={() => setAuthMode("signup")}
             className={`flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-300 ${
               authMode === "signup"
-                ? "bg-gradient-to-r from-yellow-400 to-yellow-500 text-white shadow-lg transform scale-[1.02]"
+                ? "bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-lg transform scale-[1.02] font-bold"
                 : "text-yellow-700 hover:text-yellow-800 hover:bg-yellow-100/50"
             }`}
             style={{
-              boxShadow: authMode === "signup" ? '0 4px 15px rgba(251, 191, 36, 0.3)' : 'none'
+              boxShadow: authMode === "signup" ? '0 6px 20px rgba(251, 191, 36, 0.4), 0 0 15px rgba(251, 191, 36, 0.2)' : 'none'
             }}
           >
             Create Account
